@@ -1,15 +1,3 @@
--- [Services] -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-local Services = {
-    Workspace = game:GetService("Workspace"),
-    Players = game:GetService("Players"),
-    LocalPlayer = game:GetService("Players").LocalPlayer,
-    UserInput = game:GetService("UserInputService"),
-    Camera = game:GetService("Workspace").CurrentCamera,
-    Mouse = game:GetService("Players").LocalPlayer:GetMouse(),
-    RunService = game:GetService("RunService"),
-    Lighting = game:GetService("Lighting"),
-}
-
 -- [Nexus UI Library Source] --------------------------------------------------------------------------------------------------------------------------------------------------
 getgenv().runService = game:GetService"RunService"
 getgenv().textService = game:GetService"TextService"
