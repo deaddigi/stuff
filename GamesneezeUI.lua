@@ -1767,7 +1767,7 @@ do
                 end
                 --
                 function window:Watermark(info)
-                    window.watermark = {visible = false}
+                    window.watermark = {visible = true}
                     --
                     local info = info or {}
                     local watermark_name = info.name or info.Name or info.title or info.Title or window.wminfo
