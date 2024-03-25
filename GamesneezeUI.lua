@@ -3603,11 +3603,12 @@ do
 				utility:LoadImage(list_gradient, "gradient", "https://i.imgur.com/aVlZPYX.png")
 				--
 				function playerList:GetSelection()
-					for Index, Value in pairs(playerList.players) do
-						if Value[4] then
-							return Value
-						end
-					end
+				    for Index, Value in pairs(playerList.players) do
+				        if Value[4] then
+				            return Value[1], Value[3]  -- hope this works
+				        end
+				    end
+				    return nil, nil 
 				end
 				--
 				function playerList:UpdateScroll()
