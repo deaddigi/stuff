@@ -1767,7 +1767,7 @@ do
 				end
 				--
 				function window:Watermark(info)
-					window.watermark = {visible = false} -- this shit doesnt work l0l maybe bc krampus zindex
+					window.watermark = {visible = true} -- this shit doesnt work l0l maybe bc krampus zindex
 					-- wait i js re-executed and it worked wtf??
 					local info = info or {}
 					local watermark_name = info.name or info.Name or info.title or info.Title or window.wminfo
