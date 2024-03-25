@@ -3604,7 +3604,7 @@ do
 				--
 				function playerList:GetSelection()
 					for Index, Value in pairs(playerList.players) do
-						if Value[4] then
+						if Value[3] then
 							return Value
 						end
 					end
