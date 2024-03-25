@@ -936,7 +936,7 @@ do
 				--
 				theme.accent = accent
 				--
-				local window = {pages = {}, loader = style == 2, init = false, pageammount = pageammount, isVisible = false, callback = callback, uibind = Enum.KeyCode.RightShift, wminfo = "$$$$$ AntarcticaWare $$$$$ || UID : %u || Ping : %s || Fps : %u", currentPage = nil, fading = false, dragging = false, drag = Vector2.new(0,0), currentContent = {frame = nil, dropdown = nil, multibox = nil, colorpicker = nil, keybind = nil, textbox = nil}}
+				local window = {pages = {}, loader = style == 2, init = false, pageammount = pageammount, isVisible = false, callback = callback, uibind = Enum.KeyCode.RightShift, wminfo = "magnolia || criminality || ping : $PING || fps : $FPS", currentPage = nil, fading = false, dragging = false, drag = Vector2.new(0,0), currentContent = {frame = nil, dropdown = nil, multibox = nil, colorpicker = nil, keybind = nil, textbox = nil}}
 				--
 				local main_frame = utility:Create("Frame", {Vector2.new(0,0)}, {
 					Size = utility:Size(0, size.X, 0, size.Y),
@@ -1768,7 +1768,7 @@ do
 				--
 				function window:Watermark(info)
 					window.watermark = {visible = false} -- this shit doesnt work l0l maybe bc krampus zindex
-					--
+					-- wait i js re-executed and it worked wtf??
 					local info = info or {}
 					local watermark_name = info.name or info.Name or info.title or info.Title or window.wminfo
 					--
