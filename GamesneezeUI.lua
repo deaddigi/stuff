@@ -3681,19 +3681,6 @@ do
 					end
 				end
 				--
-				function playerList:Update() end
-				--
-				function playerList:ReturnValues(Relation)
-				    local player, index = self:GetSelection()
-				    local plr_status = playerList.players[index][3] 
-				
-				    if player then
-				        print("selected plr:", player[1].Name)
-				        print("plr status:", plr_status)
-				    else
-				        print("no player selected.")
-				    end
-				end
 				--
 				utility:Connection(plrs.PlayerAdded, function(Player)
 					playerList.players[#playerList.players + 1] = {Player, Player.Name, "None", false}
