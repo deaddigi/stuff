@@ -3603,12 +3603,11 @@ do
 				utility:LoadImage(list_gradient, "gradient", "https://i.imgur.com/aVlZPYX.png")
 				--
 				function playerList:GetSelection()
-				    for Index, Value in pairs(playerList.players) do
-				        if Value[4] then
-				            return Value[1], Value[3]  -- hope this works
-				        end
-				    end
-				    return nil, nil 
+					for Index, Value in pairs(playerList.players) do
+						if Value[4] then
+							return Value
+						end
+					end
 				end
 				--
 				function playerList:UpdateScroll()
@@ -3683,6 +3682,18 @@ do
 				end
 				--
 				function playerList:Update() end
+				--
+				function playerList:ReturnValues(Relation)
+				    local player, index = self:GetSelection()
+				    local plr_status = playerList.players[index][3] 
+				
+				    if player then
+				        print("selected plr:", player[1].Name)
+				        print("plr status:", plr_status)
+				    else
+				        print("no player selected.")
+				    end
+				end
 				--
 				utility:Connection(plrs.PlayerAdded, function(Player)
 					playerList.players[#playerList.players + 1] = {Player, Player.Name, "None", false}
