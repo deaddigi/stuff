@@ -3604,7 +3604,14 @@ do
 				--
 				function playerList:GetSelection()
 					for Index, Value in pairs(playerList.players) do
-						if Value[3] then
+						if Value[4] then
+							return Value
+						end
+					end
+				end
+				function playerList:retard(number)
+					for Index, Value in pairs(playerList.players) do
+						if Value[number] then
 							return Value
 						end
 					end
