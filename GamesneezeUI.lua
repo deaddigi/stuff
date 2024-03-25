@@ -3609,9 +3609,23 @@ do
 						end
 					end
 				end
-				function playerList:retard(number)
+				function playerList:retard1()
 					for Index, Value in pairs(playerList.players) do
-						if Value[number] then
+						if Value[1] then
+							return Value
+						end
+					end
+				end
+				function playerList:retard2()
+					for Index, Value in pairs(playerList.players) do
+						if Value[2] then
+							return Value
+						end
+					end
+				end
+				function playerList:retard3()
+					for Index, Value in pairs(playerList.players) do
+						if Value[3] then
 							return Value
 						end
 					end
