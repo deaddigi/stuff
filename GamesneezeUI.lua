@@ -44,9 +44,9 @@ do
 			hovers = {},
 			Relations = {},
 			folders = {
-				main = "kittybox",
-				assets = "kittybox/Images",
-				configs = "kittybox/Configs"
+				main = "magnolia",
+				assets = "magnolia/Images",
+				configs = "magnolia/Configs"
 			},
 			shared = {
 				initialized = false,
